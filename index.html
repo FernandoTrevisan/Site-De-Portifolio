@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--=============== LINE ICONS ===============-->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!--=============== alert personalizada ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Site de Portfolio</title>
+</head>
+<body> 
+<!--=============== HEADER ===============-->
+<header class="header" id="header">
+        <!-- Nav -->
+    <nav class="nav container padd-15">
+        <!-- Nav Logo -->
+        <a href="#" class="nav-logo">
+            <h2>FTrevisan</h2>
+        </a>
+        <!-- Nav Menu -->
+        <div class="nav-menu" id="nav-menu">
+            <!-- Nav List -->
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <!-- Nav Close -->
+            <div class="nav-close" id="nav-close">
+                <i class="lni lni-close"></i>
+            </div> 
+        </div>
+        <!-- Nav Btn -->
+        <div class="nav-btns">
+            <!-- Theme Change Btn -->
+            <i class="lni lni-pallet change-theme" id="theme-button"></i>
+            <!-- Toggle Btn -->
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="lni lni-grid-alt"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+    <!--=============== MAIN ===============-->
+    <main class="main-content">
+        <!--=============== HOME ===============-->
+        <section class="home" id="home">
+            <div class="container">
+                <!-- Intro -->
+                <div class="intro">
+                    <!-- Avatar Image -->
+                    <img src="assets/img/FerTrevisanHome.png" alt="FTrevisan --- logo"> 
+                    <!-- Info -->
+                    <h1>Fernando Trevisan</h1>
+                    <span>I'm a <span class="info-text">Full-stack Developer & QA-Analyst</span></span>
+                    <!-- Social Icons -->
+                    <ul class="social-icons">
+                        <li><a href="https://www.linkedin.com/in/fertrevisan/" target="_blank" rel="noopener noreferrer" ><i class="lni lni-linkedin-original"></i></a></li> 
+                        <li><a href="https://github.com/fernandotrevisan" target="_blank" rel="noopener noreferrer" ><i class="lni lni-github-original"></i></a></li> 
+                        <li><a href="https://www.instagram.com/fernando_trevisan?igsh=OWQ4YzA2bWxwcmI0" target="_blank" rel="noopener noreferrer" ><i class="lni lni-instagram-original"></i></a></li>
+                    </ul>
+                    <!-- Button -->
+                    <div>                                           
+                        <a href="#contact" class="btn btn-default">Hire me</a> 
+                    </div>
+                    <!-- Scroll Down Mouse Wheel -->
+                    <div class="scroll-down">
+                        <a href="#home" class="mouse-wrapper">
+                            <span>Scroll Down</span>
+                            <span class="mouse">
+                                <span class="wheel"></span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== About ===============-->
+        <section class="about section" id="about">
+            <div class="container">
+                <!-- Section Title -->
+                <h2 class="section-title padd-15">About Me</h2>
+                <div class="row">
+                    <div class="about-img padd-15">
+                        <!-- Avatar Image -->
+                        <img src="assets/img/FerTrevisanAboutMe.png" alt="">
+                    </div>
+                    <div class="about-content padd-15">
+                        <div class="rounded">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <!-- About Text -->
+                                    <p>I am a dedicated professional and passionate about technology, 
+                                        with extensive experience as a Full-stack analyst and developer. 
+                                        I am constantly looking for opportunities that allow me to improve my skills in the area of Development and QA. 
+                                        My focus is to contribute to innovative projects, expanding my technical knowledge and facing new challenges.</p>
+                                        <div>
+                                            <a href="https://drive.google.com/uc?export=download&id=1KGDzZUcpbjv5DfeIgWNX7EMw4ngaJitg" class="btn btn-default">Download CV</a>
+                                        </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <!-- Skill Itens -->
+                                        <div class="skill-item">
+                                            <h4>Front-end Development</h4>
+                                            <h5> Html | Css | JavaScript | ReactJs </h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 65%; background: rgb(255,209,92);"></div>
+                                                <div class="skill-percent">65%</div>
+                                            </div>
+                                        </div>
+                                        <!-- Skill Itens -->
+                                        <div class="skill-item">
+                                            <h4>Back-end Development</h4>
+                                            <h5> Laravel | PHP | MySQL | Docker </h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 85%; background: rgb(255,76,96);"></div>
+                                                <div class="skill-percent">85%</div>
+                                            </div>
+                                        </div>
+                                        <!-- Skill Itens -->
+                                        <div class="skill-item">
+                                            <h4>QA-Analyst</h4>
+                                            <h5> PowerBI | Sas | Python </h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 35%; background: rgb(108,108,229);"></div>
+                                                <div class="skill-percent">35%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Fact Item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-thumbs-up"></i>
+                        <div class="details">
+                            <h3>50</h3>
+                            <p>Projects done</p>
+                        </div>
+                    </div>
+                    <!-- Fact Item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-coffee-cup"></i>
+                        <div class="details">
+                            <h3>278</h3>
+                            <p>Cup of coffee</p>
+                        </div>
+                    </div>
+                    <!-- Fact Item -->
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-invention"></i>
+                        <div class="details">
+                            <h3>238</h3>
+                            <p>Ideas for systems</p>
+                        </div>
+                    </div>
+                    <!-- Fact Item --> 
+                    <div class="fact-item padd-15">
+                        <i class="lni lni-network"></i>
+                        <div class="details">
+                            <h3>2</h3>
+                            <p>Carried out as a team</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Services ===============-->
+        <section class="services section">
+            <div class="container">
+                <!-- Section Title -->
+                <h2 class="section-title padd-15">Services</h2>
+                <div class="row">
+                    <!-- Service Item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(108,108,229);">
+                            <img src="assets/img/Front-end Service.png" alt="">
+                            <h3>Front-end</h3> 
+                            <p> Development of User Interfaces (UI),
+                                Development of Interactive Components,
+                                Performance Optimization.</p>
+                        </div>
+                    </div>
+                    <!-- Service Item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(249,215,76);">
+                            <img src="assets/img/Back-end Service.png" alt="">
+                            <h3>Back-end</h3> 
+                            <p> API development,
+                                Database Management,
+                                Updates and Maintenance,
+                                Testing and Debugging.</p>
+                        </div>
+                    </div>
+                    <!-- Service Item -->
+                    <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(249,123,139);">
+                            <img src="assets/img/AnalistaQA Service.png" alt="">
+                            <h3>QA-Analyst</h3> 
+                            <p>Test planning,
+                                Test Execution,
+                                Defect reports,
+                                Metrics Analysis,
+                                Process Quality Assurance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text padd-15">
+                    <p>Are you in need of any of the services? <a href="#pricing"> Click here</a> to get in touch!</p>
+                </div>
+            </div>
+        </section>
+        <!--=============== Experience ===============-->
+        <section class="section" id="experience">
+            <div class="container">
+                <!-- Section Title -->
+                <h2 class="section-title padd-15">Experience</h2>
+                <div class="row">
+                    <!-- Education -->
+                    <div class="education padd-15">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <!-- Timeline Item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> Jan de 2024 - Dec de 2025
+                                        </h3>
+                                        <h3 class="timeline-title">Universidade Católica de Brasília</h3>
+                                        <p class="timeline-text">Technologist in Systems Analysis and 
+                                            Development, Systems Analysis and Development</p>
+                                    </div>
+                                    <!-- Timeline Item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-graduation timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> Jan de 2021 - Dec de 2023
+                                        </h3>
+                                        <h3 class="timeline-title"> Etec Joaquim Ferreira do Amaral</h3>
+                                        <p class="timeline-text">Professional Qualification of Technician in Systems Development 
+                                            integrated with High School, Systems Development.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience -->
+                    <div class="experience padd-15">
+                        <div class="row">
+                            <div class="timeline-box">
+                                <div class="timeline">
+                                    <!-- Timeline Item -->
+                                    <div class="timeline-item">
+                                        <i class="lni lni-briefcase-alt timeline-icon"></i>
+                                        <h3 class="timeline-date">
+                                            <i class="lni lni-calendar"></i> Oct de 2023 -- Oct de 2023
+                                        </h3>
+                                        <h3 class="timeline-title">Volunteer work Jaú Summit - Jaú Innovation and Technology Congress</h3>
+                                        <p class="timeline-text">I actively participated in a technology event, where I had the opportunity 
+                                            to attend several lectures on work ethics and interact with renowned professionals in the programming field. 
+                                            My main role was as an analyst, involving interaction with partner companies that supported the event, which 
+                                            contributed significantly to improving my knowledge.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Pricing ===============-->
+        <section class="section pricing" id="pricing">
+            <div class="container">
+                <!-- Section Title -->
+                <h2 class="section-title padd-15">Pricing plans</h2>
+                <div class="row">
+                    <!-- Prices -->
+                    <div class="prices">
+                        <div class="price-item">
+                            <img src="assets/img/price-1.svg" alt="">
+                            <h3 class="plan">Basic</h3>
+                            <p> Coming Soon </p>
+                            <p> Support Email </p>
+                            <h3 class="price"><em>$</em>0<span>Month</span></h3>
+                            <a href="#pricing" class="btn btn-default">Get started</a>
+                        </div>
+                    </div>
+                    <!-- Prices -->
+                    <div class="prices">
+                        <div class="price-item best">
+                            <span class="badge">Recommended</span>
+                            <img src="assets/img/price-2.svg" alt="">
+                            <h3 class="plan">Preminum</h3>
+                            <p> Coming Soon</p>
+                            <p> Support Email</p>
+                            <h3 class="price"><em>$</em>0<span>Month</span></h3>
+                            <a href="#pricing" class="btn btn-default">Get started</a>
+                        </div>
+                    </div>
+                    <!-- Prices -->
+                    <div class="prices">
+                        <div class="price-item">
+                            <img src="assets/img/price-3.svg" alt="">
+                            <h3 class="plan">basic</h3>
+                            <p> Coming Soon</p>
+                            <p> Support Email</p>
+                            <h3 class="price"><em>$</em>0<span>Month</span></h3>
+                            <a href="#pricing" class="btn btn-default">Get started</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Portfolio ===============-->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <!-- Section Title -->
+                <h2 class="section-title padd-15">Portfolio</h2>
+                <div class="row">
+                    <div class="portfolio-filter padd-15">
+                        <div class="portfolio-filter-inner">
+
+                            <button type="button" class="active" data-filter="all">Everything</button>
+
+                            <button type="button" data-filter="Api">Api's</button>
+
+                            <button type="button" data-filter="Application">Application</button>
+
+                            <button type="button" data-filter="Projects">Projects</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Portifiolio item - AppMinhasCompras -->
+                    <div class="portfolio-item padd-15" data-category="Application">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/App_compras.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">App, C-sharp</span>
+                            <h3 class="portfolio-item-title">Grocery list app.</h3>       
+                            <!-- link repository -->
+                            <a href="https://github.com/FernandoTrevisan/AppMinhasCompras" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - Api_Cep -->
+                    <div class="portfolio-item padd-15" data-category="Api">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/Api_e_App_cep.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Api, php</span>
+                            <h3 class="portfolio-item-title">An API developed to query ZIP codes.</h3>       
+                            <!-- link repository -->
+                            <a href="https://github.com/FernandoTrevisan/Api_Cep" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - AppLogin -->
+                    <div class="portfolio-item padd-15" data-category="Application">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/App_Web_login.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">App-Web, php</span>
+                            <h3 class="portfolio-item-title">Login app with listing.</h3>       
+                            <!-- link repository -->
+                            <a href="https://github.com/FernandoTrevisan/AppLogin" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - AppHotelLogin -->
+                    <div class="portfolio-item padd-15" data-category="Application">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/App_Hotel.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">App, C-sharp</span>
+                            <h3 class="portfolio-item-title">Hotel app with login and rate calculations.</h3>       
+                            <!-- link repository -->
+                            <a href="https://github.com/FernandoTrevisan/AppHotelLogin" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - Projeto-Urna-Eletronica -->
+                    <div class="portfolio-item padd-15" data-category="Projects">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/Web_urna-eletronica.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Web, JavaScript</span>
+                            <h3 class="portfolio-item-title">Electronic ballot box project.</h3>       
+                            <!-- link repository -->
+                            <a href="https://github.com/FernandoTrevisan/Projeto-Urna-Eletronica" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - Projeto-Validador-de-Formulario -->
+                    <div class="portfolio-item padd-15" data-category="Projects">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/Web_formulario.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Web, JavaScript</span>
+                            <h3 class="portfolio-item-title">Form validator project.</h3>       
+                            <!-- link repository -->
+                            <a href="https://github.com/FernandoTrevisan/Projeto-Validador-de-Formulario" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - AppBancoDigital -->
+                    <div class="portfolio-item padd-15" data-category="Application">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/Api_e_App_bank.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">App, C-sharp</span>
+                            <h3 class="portfolio-item-title">Digital banking application inspired by a bank in China.</h3>
+                            <!-- link repository -->    
+                            <a href="https://github.com/FernandoTrevisan/AppBancoDigital" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Portifiolio item - App_IMC -->
+                    <div class="portfolio-item padd-15" data-category="Application">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/App_imc.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">App, C-sharp</span>
+                            <h3 class="portfolio-item-title">Application to calculate body mass index.</h3>
+                            <!-- link repository -->    
+                            <a href="https://github.com/FernandoTrevisan/App_IMC" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - Quadro-de-desenho --> 
+                    <div class="portfolio-item padd-15" data-category="Projects">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/Web_quadro-desenho.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Web, JavaScript</span>
+                            <h3 class="portfolio-item-title">Design drawing board.</h3>       
+                            <!-- link repository -->
+                            <a href="https://github.com/FernandoTrevisan/Quadro-de-desenho" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Portifiolio item - ApiGetSendJson -->
+                    <div class="portfolio-item padd-15" data-category="Api">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/Api_e_App_json.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Api, php</span>
+                            <h3 class="portfolio-item-title">An API using the GetSendJson method.</h3>       
+                            <!-- link repository -->
+                            <a href="https://github.com/FernandoTrevisan/ApiGetSendJson" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - Projeto-Clima -->
+                    <div class="portfolio-item padd-15" data-category="Projects">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/Web_clima.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Web, JavaScript</span>
+                            <h3 class="portfolio-item-title">Project using a weather API.</h3>       
+                            <!-- link repository -->
+                            <a href="https://github.com/FernandoTrevisan/Projeto-Clima" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - Projeto-Blog-do-JSONPlaceholder --> 
+                    <div class="portfolio-item padd-15" data-category="Projects">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/Web_blog.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Web, JavaScript</span>
+                            <h3 class="portfolio-item-title">Blog project inserting information into an api.</h3>       
+                            <!-- link repository -->
+                            <a href="https://github.com/FernandoTrevisan/Projeto-Blog-do-JSONPlaceholder" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - Projeto-Relogio --> 
+                    <div class="portfolio-item padd-15" data-category="Projects">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/Web_relogio.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Web, JavaScript</span>
+                            <h3 class="portfolio-item-title">Manual clock design.</h3>       
+                            <!-- link repository -->
+                            <a href="https://github.com/FernandoTrevisan/Projeto-Relogio" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Portifiolio item - ApiBancoDigital --> 
+                    <div class="portfolio-item padd-15" data-category="Api">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/Api_e_App_bank.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Api, php</span>
+                            <h3 class="portfolio-item-title">An API developed for a digital bank.</h3>       
+                            <!-- link repository --> 
+                            <a href="https://github.com/FernandoTrevisan/ApiBancoDigital" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - Projeto-Luta --> 
+                    <div class="portfolio-item padd-15" data-category="Projects">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/Web_luta.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Web, JavaScript</span>
+                            <h3 class="portfolio-item-title">Fighting game project.</h3>       
+                            <!-- link repository -->
+                            <a href="https://github.com/FernandoTrevisan/Projeto-Luta" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - App_Cep -->
+                    <div class="portfolio-item padd-15" data-category="Application">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/Api_e_App_cep.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">App, C-sharp</span>
+                            <h3 class="portfolio-item-title">CEP application, finds city and street.</h3>
+                            <!-- link repository -->   
+                            <a href="https://github.com/FernandoTrevisan/App_Cep" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - AppGetSendJson -->
+                    <div class="portfolio-item padd-15" data-category="Application">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/Api_e_App_json.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">App, C-sharp</span>
+                            <h3 class="portfolio-item-title">GetSendJson application.</h3>
+                            <!-- link repository -->   
+                            <a href="https://github.com/FernandoTrevisan/AppGetSendJson" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Portifiolio item - Banco-de-dados --> 
+                    <div class="portfolio-item padd-15" data-category="Projects">
+                        <div class="portfolio-item-inner">
+                            <div class="portfolio-item-thumbnail">
+                                <img src="assets/img/BancoDeDados.png" alt="">
+                                <div class="mask"></div>
+                            </div>
+                            <span class="term">Banco, Mysql</span>
+                            <h3 class="portfolio-item-title">Databases from different areas.</h3>       
+                            <!-- link repository -->
+                            <a href="https://github.com/FernandoTrevisan/Banco-de-dados" target="_blank" rel="noopener noreferrer">
+                                <span class="more-button">&hellip;</span> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Testimonial ===============-->
+        <section class="section">
+            <div class="container">
+                <!-- Section Title -->
+                <h2 class="section-title padd-15">Clients & Reviews</h2>
+                <!-- Testionial Wrapper-->
+                <div class="swiper testimonial-wrapper">
+                    <div class="swiper-wrapper">
+                       <!-- Testimonial Item --> 
+                       <div class="testimonial-item swiper-slide">
+                            <div class="thumb">
+                                <img src="assets/img/avatar-3.svg" alt="">
+                            </div>
+                            <h3>Jon weak</h3>
+                            <span class="subtitle">Fake reviews</span>
+                            <div class="comment">Very dedicated and committed to the quality of the work. Always willing to help and find solutions.</div>
+                       </div>
+                        <!-- Testimonial Item --> 
+                        <div class="testimonial-item swiper-slide">
+                            <div class="thumb">
+                                <img src="assets/img/avatar-1.svg" alt="">
+                            </div>
+                            <h3>Adam Richard</h3>
+                            <span class="subtitle">Fake reviews</span>
+                            <div class="comment">Demonstrates great technical skill and in-depth knowledge in the field. He always seeks to learn and update himself.</div>
+                       </div>
+                        <!-- Testimonial Item --> 
+                        <div class="testimonial-item swiper-slide">
+                            <div class="thumb">
+                                <img src="assets/img/avatar-2.svg" alt="">
+                            </div>
+                            <h3>Aubrey</h3>
+                            <span class="subtitle">Fake reviews</span>
+                            <div class="comment">Excellent ability to solve complex problems. Tackles challenges with creativity and efficiency.</div>
+                       </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Blog ===============-->
+        <section class="section">
+            <div class="container">
+                <!-- Section Title -->
+                <h2 class="section-title padd-15">Latest Posts</h2>
+                <div class="row">
+                    <!-- Blog Item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="https://gist.github.com/FernandoTrevisan/7385f69d9deedc16ab5f599551142580" target="_blank" rel="noopener noreferrer"><span class="category">Tutorial</span></a>
+                                <a href="https://gist.github.com/FernandoTrevisan/7385f69d9deedc16ab5f599551142580"target="_blank" rel="noopener noreferrer"><img src="assets/img/6.svg" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="https://gist.github.com/FernandoTrevisan/7385f69d9deedc16ab5f599551142580" target="_blank" rel="noopener noreferrer">
+                                    Get a better understanding of the internal structure of Html.</a></h3>
+                                <ul class="meta">
+                                    <li>18 december, 2023</li>
+                                    <li>FTrevisan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="https://gist.github.com/FernandoTrevisan/91228b9f749302d34345983b979415df" target="_blank" rel="noopener noreferrer"><span class="category">Tutorial</span></a>
+                                <a href="https://gist.github.com/FernandoTrevisan/91228b9f749302d34345983b979415df" target="_blank" rel="noopener noreferrer"><img src="assets/img/3.svg" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="https://gist.github.com/FernandoTrevisan/91228b9f749302d34345983b979415df" target="_blank" rel="noopener noreferrer">
+                                    Get a better understanding of the internal structure of Css.</a></h3>
+                                <ul class="meta">
+                                    <li>18 december, 2023</li>
+                                    <li>FTrevisan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Blog Item -->
+                    <div class="blog-item padd-15">
+                        <div class="inner">
+                            <div class="thumb">
+                                <a href="https://gist.github.com/FernandoTrevisan/b99155a1af323890712f146117fd2ee7" target="_blank" rel="noopener noreferrer"><span class="category">Tutorial</span></a>
+                                <a href="https://gist.github.com/FernandoTrevisan/b99155a1af323890712f146117fd2ee7" target="_blank" rel="noopener noreferrer"><img src="assets/img/4.svg" alt=""></a>
+                            </div>
+                            <div class="details">
+                                <h3 class="title"><a href="https://gist.github.com/FernandoTrevisan/b99155a1af323890712f146117fd2ee7" target="_blank" rel="noopener noreferrer">
+                                    Diverse ways to say 'Hello, world!' in a creative and varied way.</a></h3>
+                                <ul class="meta">
+                                    <li>18 december, 2023</li>
+                                    <li>FTrevisan</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--=============== Contact ===============-->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <!-- Section Title -->
+                <h2 class="section-title padd-15">Contact us</h2>
+                <div class="row">
+                    <!-- Contact Box -->
+                    <div class="contact-box padd-15">
+                        <div class="contact-data">
+                            <!-- Contact Information -->
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">call us for instant support</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-phone contact-icon"></i>
+                                    +55 (14) 99712-8927
+                                </span>
+                            </div>
+                            <!-- Contact Information -->
+                            <div class="contact-information">
+                                <h3 class="contact-subtitle">Write us by mail</h3>
+                                <span class="contact-description">
+                                    <i class="lni lni-user contact-icon"></i>
+                                    55emaildesuporte14@gmail.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Contact Form -->
+                    <form action="" id="contact-form" class="contact-form padd-15">
+                        <div class="contact-inputs">
+                            <!-- Contact Content -->
+                            <div class="contact-content">
+                                <input type="email" class="contact-input" id="email" name="user_email"  required>
+                                <label for="email" class="contact-label">Email:</label>
+                                <span></span>
+                            </div>
+                            <!-- Contact Content -->
+                            <div class="contact-content">
+                                <input type="text" class="contact-input" id="subject" name="user_subject" required>
+                                <label for="subject" class="contact-label">Subject:</label>
+                                <span></span>
+                            </div>
+                            <!-- Contact Content -->
+                            <div class="contact-content contact-area">
+                                <textarea name="user_message" id="message" cols="30" rows="10" class="contact-input" required></textarea>
+                                <label for="message" class="contact-label">Message:</label>
+                                <span></span>
+                            </div>
+                        </div>
+                        <a href="#contact" id="send-message-link" class="btn btn-default">Send Message</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!--=============== Footer ===============-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-text padd-15">
+                    <p>&copy; Fernando Marangoni da Silva Trevisan</p>
+                </div>
+            </div>
+        </footer> 
+    </main>
+    <!--=============== Theme Customize ===============-->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p>Manage your font size, color, and background</p>
+            <!-- Font Size -->
+            <div class="font-size">
+                <h3>Font Size</h3>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3 active"></span>
+                        <span class="font-size-4"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+            <!-- Color -->
+            <div class="color">
+                <h3>Color</h3>
+                <div class="choose-color">
+                    <span class="color-1"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3 active"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+            <!-- Background -->
+            <div class="background">
+                <h3>background</h3>
+                <div class="choose-bg">
+
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Dark</h5>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=============== SWIPER JS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--=============== email.js ===============-->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!--=============== alert personalizada ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--=============== JS ===============-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
